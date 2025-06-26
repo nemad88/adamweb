@@ -12,7 +12,7 @@ export function ObfuscatedText({
   return (
     <a
       href={href}
-      className="inline-flex items-center gap-1 text-cyan-600 font-semibold hover:text-emerald-500 transition-colors group"
+      className={`inline-flex items-center gap-1   group text-emerald-400 font-semibold hover:text-cyan-400 transition-colors`}
       aria-label={ariaLabel}
       style={
         href.startsWith("tel:")

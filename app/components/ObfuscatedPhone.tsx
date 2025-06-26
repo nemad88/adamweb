@@ -8,6 +8,7 @@ export function ObfuscatedPhone() {
       parts={parts}
       href={`tel:${phone.replace(/\s/g, "")}`}
       ariaLabel="Call phone number"
+      
     />
   );
 }

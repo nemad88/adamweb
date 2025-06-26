@@ -11,13 +11,13 @@ import ProfileImage from "./components/ProfileImage";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-100">
-      <div className="flex flex-col items-center gap-6 max-w-full w-full sm:w-auto px-4 py-8 bg-white/80 rounded-2xl shadow-xl border border-blue-100">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-700">
+      <div className="flex flex-col items-center gap-6 max-w-full w-full sm:w-auto px-4 py-8 bg-zinc-800/80 rounded-2xl shadow-xl border border-zinc-600">
         <ProfileImage />
-        <h1 className="text-3xl sm:text-4xl font-extrabold tracking-wide uppercase text-center mb-0.5 bg-gradient-to-r from-blue-800 via-gray-700 to-cyan-600 bg-clip-text text-transparent drop-shadow-sm">
+        <h1 className="text-3xl sm:text-4xl font-extrabold tracking-wide uppercase text-center mb-0.5 bg-gradient-to-r from-cyan-400 via-gray-400 to-emerald-400 bg-clip-text text-transparent drop-shadow-sm">
           ADAM NEMETH
         </h1>
-        <p className="text-xs sm:text-sm text-center text-gray-400 font-medium mb-1">
+        <p className="text-xs sm:text-sm text-center text-gray-500 font-medium mb-1">
           Digital solutions, simply.
         </p>
         <div className="flex flex-col gap-4 w-full">

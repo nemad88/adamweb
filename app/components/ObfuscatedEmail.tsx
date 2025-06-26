@@ -40,6 +40,7 @@ export function ObfuscatedEmail() {
       parts={parts}
       href={`mailto:${email}`}
       ariaLabel="Send email"
+      
     />
   );
 }
