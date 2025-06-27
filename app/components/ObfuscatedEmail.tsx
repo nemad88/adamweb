@@ -32,15 +32,15 @@ export function AnimatedText({ children }: { children: React.ReactNode[] }) {
 
 import { ObfuscatedText } from "./ObfuscatedText";
 
+const emailParts = ["info", "@", "adamweb", ".dev"];
+const emailHref = `mailto:${emailParts.join("")}`;
+
 export function ObfuscatedEmail() {
-  const parts = ["info", "@", "adamweb", ".dev"];
-  const email = parts.join("");
   return (
     <ObfuscatedText
-      parts={parts}
-      href={`mailto:${email}`}
+      parts={emailParts}
+      href={emailHref}
       ariaLabel="Send email"
-      
     />
   );
 }

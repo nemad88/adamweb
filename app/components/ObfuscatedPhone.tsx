@@ -1,14 +1,14 @@
 import { ObfuscatedText } from "./ObfuscatedText";
 
+const phoneParts = ["+36", " 30", " 594", "7244"];
+const phoneHref = `tel:${phoneParts.join("").replace(/\s/g, "")}`;
+
 export function ObfuscatedPhone() {
-  const parts = ["+36", " 30", " 594", "7244"];
-  const phone = parts.join("");
   return (
     <ObfuscatedText
-      parts={parts}
-      href={`tel:${phone.replace(/\s/g, "")}`}
+      parts={phoneParts}
+      href={phoneHref}
       ariaLabel="Call phone number"
-      
     />
   );
 }
