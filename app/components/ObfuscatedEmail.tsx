@@ -32,7 +32,7 @@ export function AnimatedText({ children }: { children: React.ReactNode[] }) {
 
 import { ObfuscatedText } from "./ObfuscatedText";
 
-const emailParts = ["info", "@", "adamweb", ".dev"];
+const emailParts = ["adam.nemeth.dev", "@", "gmail", ".com"];
 const emailHref = `mailto:${emailParts.join("")}`;
 
 export function ObfuscatedEmail() {
