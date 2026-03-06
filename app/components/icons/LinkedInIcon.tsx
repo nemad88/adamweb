@@ -1,11 +1,8 @@
-const baseIconClassName = "w-6 h-6";
-const blueIconClassName = "text-blue-700 dark:text-blue-400";
-
 export function LinkedInIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`${baseIconClassName} ${blueIconClassName}`}
+      className="w-5 h-5"
       fill="currentColor"
       viewBox="0 0 24 24"
     >

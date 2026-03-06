@@ -11,16 +11,39 @@ import ProfileImage from "./components/ProfileImage";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-700">
-      <div className="flex flex-col items-center gap-6 max-w-full w-full sm:w-auto px-4 py-8 bg-zinc-800/80 rounded-2xl shadow-xl border border-zinc-600">
-        <ProfileImage />
-        <h1 className="text-3xl sm:text-4xl font-extrabold tracking-wide uppercase text-center mb-0.5 bg-gradient-to-r from-cyan-400 via-gray-400 to-emerald-400 bg-clip-text text-transparent drop-shadow-sm">
-          ADAM NEMETH
+    <div className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden">
+      {/* Background glow effect */}
+      <div aria-hidden="true" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-indigo-500/8 blur-[120px] animate-glow-pulse pointer-events-none" />
+
+      <main className="relative z-10 flex flex-col items-center w-full max-w-md mx-auto px-6 py-12">
+        <div className="animate-fade-in-up">
+          <ProfileImage />
+        </div>
+
+        <h1
+          className="mt-8 text-4xl sm:text-5xl font-bold tracking-tight text-center text-white text-pretty animate-fade-in-up"
+          style={{ animationDelay: "0.1s" }}
+        >
+          Adam Nemeth
         </h1>
-        <p className="text-xs sm:text-sm text-center text-gray-500 font-medium mb-1">
+
+        <p
+          className="mt-3 text-base text-zinc-500 font-medium tracking-wide animate-fade-in-up"
+          style={{ animationDelay: "0.2s" }}
+        >
           Digital solutions, simply.
         </p>
-        <div className="flex flex-col gap-4 w-full">
+
+        <div
+          aria-hidden="true"
+          className="mt-10 w-full h-px bg-linear-to-r from-transparent via-zinc-700 to-transparent animate-fade-in-up"
+          style={{ animationDelay: "0.3s" }}
+        />
+
+        <div
+          className="mt-8 flex flex-col gap-3 w-full animate-fade-in-up"
+          style={{ animationDelay: "0.35s" }}
+        >
           <ContactRow
             icon={<AtIcon />}
             label="Email"
@@ -36,7 +59,7 @@ export default function Home() {
           <ContactRow
             icon={<LinkedInIcon />}
             label="LinkedIn"
-            value="linkedin.com/in/nemadam/"
+            value="linkedin.com/in/nemadam"
             href="https://www.linkedin.com/in/nemadam/"
           />
           <ContactRow
@@ -46,7 +69,7 @@ export default function Home() {
             href="https://github.com/nemad88"
           />
         </div>
-      </div>
+      </main>
     </div>
   );
 }

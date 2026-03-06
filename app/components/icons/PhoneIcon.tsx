@@ -1,11 +1,8 @@
-const baseIconClassName = "w-6 h-6";
-const greenIconClassName = "text-green-500 dark:text-green-300";
-
 export function PhoneIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`${baseIconClassName} ${greenIconClassName}`}
+      className="w-5 h-5"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"

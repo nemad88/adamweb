@@ -17,7 +17,8 @@ const animationToConfig = {
 export function AnimatedText({ parts }: { parts: string[] }) {
   const ref = useRef<HTMLSpanElement>(null);
   useEffect(() => {
-    if (ref.current) {
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (ref.current && !prefersReduced) {
       gsap.fromTo(ref.current.children, animationConfig, animationToConfig);
     }
   }, []);

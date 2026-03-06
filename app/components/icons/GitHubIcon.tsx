@@ -1,11 +1,8 @@
-const baseIconClassName = "w-6 h-6";
-const grayIconClassName = "text-gray-800 dark:text-gray-400";
-
 export function GitHubIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`${baseIconClassName} ${grayIconClassName}`}
+      className="w-5 h-5"
       fill="currentColor"
       viewBox="0 0 24 24"
     >

@@ -1,18 +1,17 @@
 import Image from "next/image";
 
-const profileImageClassName =
-  "w-28 h-28 rounded-full shadow-lg border-4 border-white object-cover mb-2";
-
 export default function ProfileImage() {
   return (
-    <Image
-      src="/profile.jpeg"
-      alt="Profile photo"
-      className={profileImageClassName}
-      width={112}
-      height={112}
-      loading="lazy"
-      priority={false}
-    />
+    <div className="relative">
+      <div aria-hidden="true" className="absolute -inset-1 rounded-full bg-linear-to-br from-indigo-500/30 to-purple-500/30 blur-md animate-glow-pulse" />
+      <Image
+        src="/profile.jpeg"
+        alt="Profile photo"
+        className="relative w-32 h-32 rounded-full object-cover ring-2 ring-white/10"
+        width={128}
+        height={128}
+        priority
+      />
+    </div>
   );
 }
