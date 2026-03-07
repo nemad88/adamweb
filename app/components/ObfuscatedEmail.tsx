@@ -1,6 +1,6 @@
 import { ObfuscatedText } from "./ObfuscatedText";
 
-const emailParts = ["adam.nemeth.dev", "@", "gmail", ".com"];
+const emailParts = ["info", "@", "adamweb", ".dev"];
 const emailHref = `mailto:${emailParts.join("")}`;
 
 export function ObfuscatedEmail() {
